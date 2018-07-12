@@ -1,0 +1,989 @@
+<HTML>
+<HEAD>
+<TITLE>Fazuul - Item Creation</TITLE>
+</HEAD>
+<BODY>
+
+<TABLE BORDER=1 CELLPADDING="10" CELLSPACING="0" WIDTH="770" ALIGN="center" BORDERCOLOR="#444444">
+ <TR>
+  <TD ALIGN="CENTER"><IMG SRC="fazuul_header.jpg"></TD>
+ </TR>
+ <TR>
+  <TD ALIGN="CENTER">
+
+      <A HREF="fazuul_intro.html">Home</A>
+      &nbsp; &nbsp; &nbsp; <A HREF="fazuul_item_creation.html">Item Creation</A>
+      &nbsp; &nbsp; &nbsp; <A HREF="fazuul_item_list.html">Item Catalog</A>
+      &nbsp; &nbsp; &nbsp; <A HREF="fazuul_maps.html">Maps</A>
+<!--      &nbsp; &nbsp; &nbsp; <A HREF="fazuul_locations.html">Locations of Interest</A>  -->
+      &nbsp; &nbsp; &nbsp; <A HREF="fazuul_misc.html">Other Notes</A>
+      &nbsp; &nbsp; &nbsp; <A HREF="fazuul_telnet_client.html">Telnet Client</A></TD>
+ </TR>
+ <TR>
+  <TD>
+
+<P>
+Combining objects is an extremely important method of discovery in Fazuul.  Littered throughout the land, you will find these items frequently lying on the ground:  gwingus, mongoo, snuge, torkus and wigglesnort.  These 5 objects form the building blocks (level1-objects) to a number of new items in the game.
+<BR><BR>
+Because it would take a while to scour the land and find an object each time you need one, there are some objects which will generate each of these level1-objects for you, with the push of a button.  By building all of these creation-objects, you will be able to construct more advanced objects.  These important objects are:<BR><BR>
+<TABLE BORDER="1" CELLSPACING="0" CELLPADDING="5" WIDTH="270" ALIGN="center">
+ <TR>
+  <TD ALIGN="center"><B> Item Needed </B></TD>
+  <TD ALIGN="center"><B> Item Created </B></TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center">Wufflar</TD>
+  <TD ALIGN="center">Torkus</TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center">Dampish</TD>
+  <TD ALIGN="center">Mongoo</TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center">Cistle</TD>
+  <TD ALIGN="center">Snuge</TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center">Suvar</TD>
+  <TD ALIGN="center">Wigglesnort</TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center">Nabob</TD>
+  <TD ALIGN="center">Gwingus</TD>
+ </TR>
+</TABLE>
+<BR><BR>
+<I>Helpful hint:</I>  Certain telnet clients will allow you to build macros, often with the Function keys on your keyboard.  You can drop the creation-objects in a room, and build macros that will perform the following:<BR>
+get the creation-object, <BR>
+push the button [new object made], <BR>
+drop the creation-object, <BR>
+pick up the new object<BR>
+With a single push of F1, I can have a gwingus created & in my hands... F2 creates a mongoo, etc..  This will make the process of creating more advanced items a little faster & easier.<BR>
+<I>Additional Note:</I>  There is a limit to the number of items in a room and in your hands.  I recommend finding an area of 5 rooms in a line where you can drop each object.  So for instance, drop a wufflar, move east, drop a dampish, etc.  Then just move to the proper room, hit your macro and collect your items.  This will avoid the item limit.
+<P ALIGN="center"><FONT COLOR="#FF0000">Also, take a look at my <A HREF="fazuul_telnet_client">Fazuul Telnet Client</A> which will automate the item creation process for you!</FONT></P>
+Next, here are the charts that show what objects will combine with other objects.  Combinations are not order specific, so attaching a mongoo to gwingus is the same as attaching a gwingus to a mongoo.  Also, in my experience, it seemed that the combinations worked in levels.. So level1-objects can only combine with other level1-objects.. level2 to level2, etc.
+<BR><BR>
+
+<H3>Level 1:</H3>
+<TABLE BORDER="1" CELLSPACING="0" CELLPADDING="2">
+ <TR>
+  <TD ALIGN="center"><B> Mix v with -> </B></TD>
+  <TD ALIGN="center"><B> torkus </B></TD>
+  <TD ALIGN="center"><B> snuge </B></TD>
+  <TD ALIGN="center"><B> gwingus </B></TD>
+  <TD ALIGN="center"><B> wigglesnort </B></TD>
+  <TD ALIGN="center"><B> mongoo </B></TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> torkus </B></TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> gongo </TD>
+  <TD ALIGN="center"> wufflar </TD>
+  <TD ALIGN="center"> bork </TD>
+  <TD ALIGN="center"> framus </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> snuge </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> gongo </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> rhubarb </TD>
+  <TD ALIGN="center"> dampish </TD>
+  <TD ALIGN="center"> rukkle </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> gwingus </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> wufflar </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> rhubarb </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> bilge </TD>
+  <TD ALIGN="center"> moolkoo </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> wigglesnort </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> bork </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> dampish </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> bilge </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> frakkle </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> mongoo </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> framus </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> rukkle </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> moolkoo </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> frakkle </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+ </TR>
+</TABLE>
+<BR><BR>
+<H3>Level 2:</H3>
+
+<TABLE BORDER="1" CELLSPACING="0" CELLPADDING="2">
+ <TR>
+  <TD ALIGN="center"><B> Mix v with -> </B></TD>
+  <TD ALIGN="center"><B> gongo </B></TD>
+  <TD ALIGN="center"><B> wufflar </B></TD>
+  <TD ALIGN="center"><B> bork </B></TD>
+  <TD ALIGN="center"><B> framus </B></TD>
+  <TD ALIGN="center"><B> rhubarb </B></TD>
+  <TD ALIGN="center"><B> dampish </B></TD>
+  <TD ALIGN="center"><B> rukkle </B></TD>
+  <TD ALIGN="center"><B> bilge </B></TD>
+  <TD ALIGN="center"><B> moolkoo </B></TD>
+  <TD ALIGN="center"><B> frakkle </B></TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> gongo </B></TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> suvar </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> tracton </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> wufflar </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> nylarx </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> bork </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> palt </TD>
+  <TD ALIGN="center"> traset </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> frammus </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> ravus </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> sepper </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> rhubarb </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> suvar </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> ravus </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> dampish </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> rommus </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> torrel </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> rukkle </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> palt </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> sepper </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> bilge </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> traset </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> rommus </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> cistle </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> moolkoo </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> tracton </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> nylarx </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> frakkle </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> torrel </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> cistle </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+ </TR>
+</TABLE>
+<BR><BR>
+
+<H3>Level 3:</H3>
+
+<TABLE BORDER="1" CELLSPACING="0" CELLPADDING="2">
+ <TR>
+  <TD ALIGN="center"><B> Mix v with -> </B></TD>
+  <TD ALIGN="center"><B> sepper </B></TD>
+  <TD ALIGN="center"><B> cistle </B></TD>
+  <TD ALIGN="center"><B> rommus </B></TD>
+  <TD ALIGN="center"><B> torrel </B></TD>
+  <TD ALIGN="center"><B> suvar </B></TD>
+  <TD ALIGN="center"><B> ravus </B></TD>
+  <TD ALIGN="center"><B> traset </B></TD>
+  <TD ALIGN="center"><B> tracton </B></TD>
+  <TD ALIGN="center"><B> nylarx </B></TD>
+  <TD ALIGN="center"><B> palt </B></TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> sepper </B></TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> flingle </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> snarp </TD>
+  <TD ALIGN="center"> kootpod </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> cistle </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> bundle </TD>
+  <TD ALIGN="center"> ruckus </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> bagloon </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> rommus </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> bundle </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> torrel </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> ruckus </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> nabob </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> suvar </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> flingle </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> cacapoo </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B>ravus</B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> zarkon </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> dweezle </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> traset </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> snarp </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> nabob </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> tracton </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> kootpod </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> zarkon </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> nylarx </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> cacapoo </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> palt </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> bagloon </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> dweezle </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+ </TR>
+</TABLE>
+<BR><BR>
+<H3>Level 4:</H3>
+
+<TABLE BORDER="1" CELLSPACING="0" CELLPADDING="2">
+ <TR>
+  <TD ALIGN="center"><B> Mix v with -> </B></TD>
+  <TD ALIGN="center"><B> cacapoo </B></TD>
+  <TD ALIGN="center"><B> ruckus </B></TD>
+  <TD ALIGN="center"><B> bagloon </B></TD>
+  <TD ALIGN="center"><B> dweezle </B></TD>
+  <TD ALIGN="center"><B> flingle </B></TD>
+  <TD ALIGN="center"><B> bundle </B></TD>
+  <TD ALIGN="center"><B> snarp </B></TD>
+  <TD ALIGN="center"><B> nabob </B></TD>
+  <TD ALIGN="center"><B> zarkon </B></TD>
+  <TD ALIGN="center"><B> kootpod </B></TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> cacapoo </B></TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> felafel </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> dongle </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> ruckus </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> fracas </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> <I>dweezle2</I> </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> bagloon </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> fracas </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> kwish </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> dweezle </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> felafel </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> snalt </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> flingle </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> kwish </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> <I>bagloon2</I> </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> bundle </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> quorum </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> snarp </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> quorum </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> <I>zarkon2</I> </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> nabob</B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> dweezle2 </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> snalt </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> zarkon </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> dongle </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> zarkon2 </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> kootpod </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> bagloon2 </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+ </TR>
+</TABLE>
+<BR><BR>
+<H3>Level 5:</H3>
+
+<TABLE BORDER="1" CELLSPACING="0" CELLPADDING="2">
+ <TR>
+  <TD ALIGN="center"><B> Mix v with -> </B></TD>
+  <TD ALIGN="center"><B> felafel </B></TD>
+  <TD ALIGN="center"><B> quorum </B></TD>
+  <TD ALIGN="center"><B> dongle </B></TD>
+  <TD ALIGN="center"><B> snalt </B></TD>
+  <TD ALIGN="center"><B> fracas </B></TD>
+  <TD ALIGN="center"><B> kwish </B></TD>
+  <TD ALIGN="center"><B> dweezle2 </B></TD>
+  <TD ALIGN="center"><B> zarkon2 </B></TD>
+  <TD ALIGN="center"><B> bagloon2 </B></TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> felafel </B></TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> wongum </TD>
+  <TD ALIGN="center"> narret </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> quorum </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> <I>bagloon3</I> </TD>
+  <TD ALIGN="center"> wapple </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> dongle </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> quahog(BD) </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> snalt</B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> bagloon3 </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> nebbish </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> fracas</B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> wapple </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> <I>kootpod2</I> </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> kwish </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> nebbish </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> quahog(ZK) </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> dweezle2 </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> kootpod2 </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> zarkon2 </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> wongum </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> quahog(ZK) </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> bagloon2 </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> narret </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> quahog(BD) </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+ </TR>
+</TABLE>
+<BR><BR>
+<H3>Level 6:</H3>
+
+<TABLE BORDER="1" CELLSPACING="0" CELLPADDING="2">
+ <TR>
+  <TD ALIGN="center"><B> Mix v with -> </B></TD>
+  <TD ALIGN="center"><B> nebbish </B></TD>
+  <TD ALIGN="center"><B> quahog(BD) </B></TD>
+  <TD ALIGN="center"><B> narret </B></TD>
+  <TD ALIGN="center"><B> wapple </B></TD>
+  <TD ALIGN="center"><B> wongum </B></TD>
+  <TD ALIGN="center"><B> quahog(ZK) </B></TD>
+  <TD ALIGN="center"><B> kootpod2 </B></TD>
+  <TD ALIGN="center"><B> bagloon3 </B></TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> nebbish </B></TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> noodle </TD>
+  <TD ALIGN="center"> quahog(WN) </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> quahog(BD) </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> greeb </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> narret</B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> drivel </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> wapple </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> noodle </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> fashnork </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> wongum </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> quahog(WN) </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> greeb </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> quahog(ZK) </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> drivel </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> narn </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> kootpod2 </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> fashnork </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> scroom </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> bagloon3 </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> narn </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> scroom </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+ </TR>
+</TABLE>
+<BR><BR>
+<H3>Level 7:</H3>
+
+<TABLE BORDER="1" CELLSPACING="0" CELLPADDING="2">
+ <TR>
+  <TD ALIGN="center"><B> Mix v with -> </B></TD>
+  <TD ALIGN="center"><B> drivel </B></TD>
+  <TD ALIGN="center"><B> fashnork </B></TD>
+  <TD ALIGN="center"><B> noodle </B></TD>
+  <TD ALIGN="center"><B> greeb </B></TD>
+  <TD ALIGN="center"><B> scroom </B></TD>
+  <TD ALIGN="center"><B> narn </B></TD>
+  <TD ALIGN="center"><B> quahog(WN) </B></TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> drivel </B></TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> snaack </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> fashnork </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> ceeveese </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> quice </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> noodle </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> snaack </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> ceeveese </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> greeb </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> babbalisk </TD>
+  <TD ALIGN="center"> quilbert </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> scroom </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> <I>kootpod3</I> </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> narn </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> quice </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> babbalisk </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> quahog(WN) </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> quilbert </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> kootpod3 </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+ </TR>
+</TABLE>
+<BR><BR>
+<H3>Level 8:</H3>
+
+<TABLE BORDER="1" CELLSPACING="0" CELLPADDING="2">
+ <TR>
+  <TD ALIGN="center"><B> Mix v with -> </B></TD>
+  <TD ALIGN="center"><B> babbalisk </B></TD>
+  <TD ALIGN="center"><B> snaack </B></TD>
+  <TD ALIGN="center"><B> quilbert </B></TD>
+  <TD ALIGN="center"><B> ceeveese </B></TD>
+  <TD ALIGN="center"><B> quice </B></TD>
+  <TD ALIGN="center"><B> kootpod3 </B></TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> babbalisk </B></TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> snaack </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> quilbert </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> ceeveese </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> quice </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+  <TD ALIGN="center"> x </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="center"><B> kootpod3 </B></TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center" BGCOLOR="#BBBBBB"> x </TD>
+  <TD ALIGN="center"> &nbsp; </TD>
+ </TR>
+</TABLE>
+
+<!--  useful code
+ <TR>
+  <TD ALIGN="center"><B> </B></TD>
+  <TD ALIGN="center">  </TD>
+  <TD ALIGN="center">  </TD>
+  <TD ALIGN="center">  </TD>
+  <TD ALIGN="center">  </TD>
+  <TD ALIGN="center">  </TD>
+  <TD ALIGN="center">  </TD>
+  <TD ALIGN="center">  </TD>
+  <TD ALIGN="center">  </TD>
+  <TD ALIGN="center">  </TD>
+  <TD ALIGN="center">  </TD>
+ </TR>
+-->
+
+
+</P>
+
+  </TD>
+ </TR>
+ <TR>
+  <TD ALIGN="CENTER"><B>Thanks for visiting.  I'd love to hear from you! ~ <A HREF="mailto:seanbbs@sbcglobal.net">seanbbs@sbcglobal.net</a></B></TD>
+ </TR>
+
+<TR>
+<TD BGCOLOR="#CCEEFF" ALIGN="center"> &nbsp; &nbsp; Available Guides: &nbsp; &nbsp; 
+<A HREF="fazuul_intro.html">Fazuul</A> &nbsp; &nbsp; 
+<A HREF="loc_intro.html">Lords of Cyberspace</A>
+</TD>
+</TR>
+</TABLE>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-5609171-1");
+pageTracker._trackPageview();
+</script>
+
+</BODY>
+</HTML>
